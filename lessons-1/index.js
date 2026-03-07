@@ -72,13 +72,10 @@ users.forEach(user => {
     }
 })
 
+console.log('Birinchi for tugadi')
 
 for (const user of users) {
-    if (user.age >= 21) {
-        console.log('15 ming so\'m');
-    } else if (user.age > 12) {
-        console.log('10 ming so\'m');
-    } else {
-        console.log('Tekin');
-    }
+    const userPriceTicket = user.age >= 21 ? '15 ming so\'m' : (user.age > 12 ? '10 ming so\'m' : 'Tekin');
+    console.log(userPriceTicket);
+    // console.log(user.age === 100 ? 'Muborak 100 yosh' : 'siz hali yosh ekansiz')
 }
